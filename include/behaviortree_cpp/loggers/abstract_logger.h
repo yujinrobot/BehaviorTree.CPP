@@ -12,6 +12,8 @@ enum class TimestampType
   relative
 };
 
+typedef std::array<uint8_t, 12> SerializedTransition;
+
 class StatusChangeLogger
 {
 public:

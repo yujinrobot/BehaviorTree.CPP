@@ -324,13 +324,15 @@ public:
     }
   }
 
+[[nodiscard]] NodeConfig& config();
+
 protected:
   friend class BehaviorTreeFactory;
   friend class DecoratorNode;
   friend class ControlNode;
   friend class Tree;
 
-  [[nodiscard]] NodeConfig& config();
+  
 
   /// Method to be implemented by the user
   virtual BT::NodeStatus tick() = 0;
