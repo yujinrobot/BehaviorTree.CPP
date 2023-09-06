@@ -73,7 +73,7 @@ else()
     include(cmake/conan_build.cmake)
 endif()
 
-
+include_directories( ${ZeroMQ_INCLUDE_DIRS} )
 #############################################################
 # LIBRARY
 
