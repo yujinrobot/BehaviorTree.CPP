@@ -30,6 +30,7 @@ else (ZeroMQ_LIBRARIES AND ZeroMQ_INCLUDE_DIRS)
     NAMES
       zmq.h
     PATHS
+      /opt/helpers/include
       /usr/include
       /usr/local/include
       /opt/local/include
@@ -39,6 +40,7 @@ else (ZeroMQ_LIBRARIES AND ZeroMQ_INCLUDE_DIRS)
     NAMES
       zmq
     PATHS
+      /opt/helpers/lib
       /usr/lib
       /usr/local/lib
       /opt/local/lib
