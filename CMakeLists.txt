@@ -32,6 +32,12 @@ option(BTCPP_SQLITE_LOGGING "Add SQLite logging." ON)
 
 option(USE_V3_COMPATIBLE_NAMES  "Use some alias to compile more easily old 3.x code" OFF)
 
+option( ADD_INC_PATH "/opt/helpers/include" )
+option( ADD_LIB_PATH "/opt/helpers/lib" )
+
+message( STATUS "ADD_INC_PATH--------------------------${ADD_INC_PATH}")
+message( STATUS "ADD_LIB_PATH--------------------------${ADD_LIB_PATH}")
+
 if(USE_V3_COMPATIBLE_NAMES)
     add_definitions(-DUSE_BTCPP3_OLD_NAMES)
 endif()
